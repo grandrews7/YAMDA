@@ -58,6 +58,14 @@ Or download a stable release version (v0.1 should reproduce the paper's results 
 wget https://github.com/daquang/YAMDA/archive/0.1.tar.gz
 ```
 
+```
+conda install -c conda-forge mamba
+mamba create -n YAMDA -y python=3.6.5
+mamba activate YAMDA
+mamba install cudnn=7.1.2 cudatoolkit=9.0 pytorch=0.4.0 torchvision=0.2.1 numpy=1.13.3 tqdm=4.23.3 scipy=0.19.1
+mamba install -c bioconda pyfaidx
+```
+
 YAMDA relies on several open source software packages. Links and version numbers for the packages used to develop and
 test YAMDA are listed below; however, typically any recent version of these packages should be fine for running YAMDA. 
 The best and easiest way to install all dependencies is with [Anaconda](https://www.anaconda.com/) (5.2, Python 3.6 
